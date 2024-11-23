@@ -15,7 +15,7 @@ const UserMoodList = ({ userId , mood }) => {
 
         const fetchMoodData = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/getUserMoods/${userId}`);
+                const response = await axios.get(`https://mood-tracker-0e3g.onrender.com/api/getUserMoods/${userId}`);
                 setMoodData(response.data);
                 setError('');
             } catch (err) {

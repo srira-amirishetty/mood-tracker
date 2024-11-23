@@ -25,7 +25,7 @@ const GetMood = () => {
 
         try{
             
-            const res = await axios.post('http://localhost:5000/api/submitmood', {userId, mood, description});
+            const res = await axios.post('https://mood-tracker-0e3g.onrender.com/api/submitmood', {userId, mood, description});
             setResponse(res.data);
             console.log('submitted')
         } catch (err) {
